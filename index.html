@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        input[type="text"]:focus {
+            border-color: #3f51b5;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #3f51b5;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #2c3e9d;
+        }
+
+        .cont {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 20px;
+        }
+
+        .task {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .task:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .task p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .dlt {
+            cursor: pointer;
+            color: #e74c3c;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .dlt:hover {
+            color: #c0392b;
+        }
+
+        .dlt svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        
+        @media (max-width: 768px) {
+            .cont {
+                max-width: 90%;
+            }
+
+            button, input[type="text"] {
+                width: 100%;
+                max-width: none;
+                margin: 10px 0;
+                padding: 10px;
+            }
+
+            .task {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .task p {
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .task {
+                padding: 10px;
+            }
+
+            .task p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>TO-DO LIST</h1>
+    <input type="text">
+    <button> Add </button>
+
+    <div class="cont">
+
+        <!-- <div class="task">
+            <p> Task 1 </p>
+            <div class="dlt">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25px" viewBox="0 0 24 24"  fill="currentColor"><path d="M20 7V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V7H2V5H22V7H20ZM11 10V17H13V10H11ZM7 2H17V4H7V2Z"></path></svg>
+            </div>
+        </div> -->
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
